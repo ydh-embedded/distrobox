@@ -1,34 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
-    <title>Collapsible Section Example</title>
-</head>
-<body>
-
-<button class="collapsible">Click to expand</button>
-
-<div class="content">
-    <p>This is the hidden text that will be revealed when you click the button. You can put a lot of text here.</p>
-</div>
-
-<script>
-    const coll = document.getElementsByClassName("collapsible");
-    for (let i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            const content = this.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        });
-    }
-</script>
-
 # Container
 
 ![ship](./screen/ships.webp)
@@ -74,8 +43,8 @@
 ```
 
 <details open>
-<summary>Click to expand</summary>
-...
+<summary>🐢open Excample ⌨️</summary>
+
 ```ps
    ~  sudo pacman -S podman distrobox  opencl-nvidia                                         1 ✘
 Warnung: podman-5.3.1-1 ist aktuell -- Reinstalliere
@@ -110,6 +79,7 @@ Größendifferenz der Aktualisierung: 0,00 MiB
 (5/5) Updating icon theme caches...
 
 ```
+
 </details>
 
 ### Unterschiede
@@ -135,7 +105,3 @@ Größendifferenz der Aktualisierung: 0,00 MiB
 #### Docker --Deamon-basiert:
 
     Docker hingegen verwendet eine Client-Server-Architektur, bei der der Docker-Client mit dem Docker-Daemon (dockerd) kommuniziert. Der Daemon ist für die Verwaltung von Containern, Images, Netzwerken und Volumes zuständig. Das bedeutet, dass der Docker-Daemon ausgeführt werden muss, damit Sie Docker-Befehle verwenden können.
-
-</body>
-</html>
-```
