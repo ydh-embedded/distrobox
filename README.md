@@ -117,9 +117,84 @@ Größendifferenz der Aktualisierung: 0,00 MiB
 
     Docker hingegen verwendet eine Client-Server-Architektur, bei der der Docker-Client mit dem Docker-Daemon (dockerd) kommuniziert. Der Daemon ist für die Verwaltung von Containern, Images, Netzwerken und Volumes zuständig. Das bedeutet, dass der Docker-Daemon ausgeführt werden muss, damit Sie Docker-Befehle verwenden können.
 
+### Container Stoppen
+
+#### Variante --- 1 Shell
+
+#### Variante --- 2 sh - File
+
+Wir geben in der Shell folgenden Befehl ein:
+
+```ps
+nano stop_distrobox_containers.sh
+```
+
+und schreiben folgenden Befehl in die Datei:
+
+    #!/bin/bash
+
+    # Stop all running Distrobox containers
+    echo "Stopping all running Distrobox containers..."
+    distrobox stop --all
+
+    echo "All running Distrobox containers have been stopped."
+
+Wir machen die DAtei ausführbar:
+
+    chmod +x stop_distrobox_containers.sh
+
+<details open>
+<summary>🐢 Open Excample of Stop Containers</summary>
+
+```ps
+    ~  ./stop_distrobox_containers.sh                                   ✔
+Stopping all running Distrobox containers...
+Do you really want to stop container_ubuntu container_rocky_9 ? [Y/n]: y
+WARN[0000] failed to kill all processes, possibly due to lack of cgroup (Hint: enable cgroup v2 delegation)  error="cgroup not exist"
+container_ubuntu
+WARN[0000] failed to kill all processes, possibly due to lack of cgroup (Hint: enable cgroup v2 delegation)  error="cgroup not exist"
+container_rocky_9
+All running Distrobox containers have been stopped.
+
+```
+
+```ps
+       ~  distrobox list                                                                           ✔
+    ID           | NAME                 | STATUS             | IMAGE
+    5bd9a731e2f3 | container_ubuntu     | Up 3 hours         | docker.io/library/ubuntu:latest
+    0c4f5c0f7357 | container_rocky_9    | Up 3 hours         | docker.io/library/rockylinux:9
+       ~  distrobox list                                                                           ✔
+    ID           | NAME                 | STATUS             | IMAGE
+    5bd9a731e2f3 | container_ubuntu     | Exited (143) 7 seconds ago | docker.io/library/ubuntu:latest
+    0c4f5c0f7357 | container_rocky_9    | Exited (143) 6 seconds ago | docker.io/library/rockylinux:9
+```
+
+</details>
+
+## Schritt 2: Erstellen Sie ein Shell-Skript
+
+1. **Erstellen Sie das Shell-Skript**:
+   Verwenden Sie einen Texteditor, um eine neue Shell-Skriptdatei zu erstellen. Sie können zum Beispiel `nano` verwenden:
+
+   ``bash
+   nano stop_distrobox.sh
+
+## Step 1: Open WSL
+
+1. Launch your WSL terminal. You can do this by searching for "WSL" or "Ubuntu" in the Windows Start menu.
+
+## Step 2: Create a Shell Script
+
+1. **Create the Shell Script**:
+   Use a text editor to create a new shell script file. For example, you can use `nano`:
+
+   ```bash
+   nano stop_distrobox.sh
+   ```
+
 ### GitHub Container Registry (GHCR)
 
-[GHCR](https://github.blog/news-insights/product-news/introducing-github-container-registry/)
+[🌎 Link: GHCR](https://github.blog/news-insights/product-news/introducing-github-container-registry/)
 
 </body>
 </html>
