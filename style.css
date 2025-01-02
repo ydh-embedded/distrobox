@@ -1,0 +1,45 @@
+/* Style for the collapsible button */
+.collapsible {
+    background-color: #f1f1f1;
+    /* Light gray background */
+    color: #444;
+    /* Dark text color */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    padding: 10px;
+    /* Padding around the text */
+    width: 100%;
+    /* Full width */
+    border: none;
+    /* No border */
+    text-align: left;
+    /* Left-aligned text */
+    outline: none;
+    /* No outline */
+    font-size: 15px;
+    /* Font size */
+    transition: background-color 0.3s;
+    /* Smooth background color transition */
+}
+
+/* Change background color on hover */
+.collapsible:hover {
+    background-color: #ddd;
+    /* Darker gray on hover */
+}
+
+/* Style for the content section */
+.content {
+    padding: 0 18px;
+    /* Padding on the left and right */
+    display: none;
+    /* Hidden by default */
+    overflow: hidden;
+    /* Hide overflow */
+    background-color: #f9f9f9;
+    /* Light background for content */
+    border-left: 2px solid #ccc;
+    /* Left border for content */
+    margin-bottom: 10px;
+    /* Space below the content */
+}
