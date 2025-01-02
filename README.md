@@ -1,5 +1,7 @@
 # Container
 
+![ship](./screen/ships.webp)
+
 ## distrobox
 
 ### Wir erstellen eine neuen Container [rocky:9]
@@ -74,3 +76,27 @@ Größendifferenz der Aktualisierung:      0,00 MiB
 (5/5) Updating icon theme caches...
 
 ```
+
+### Unterschiede
+
+    Die Unterschiede liegen nicht in der Befehlsanweisung sondern im Backend.
+    In erster Linie in der zugrundeliegenden Container-Verwaltungstechnologie,
+    welche verwendet wird und in der Art und Weise, wie sie aufgerufen werden
+
+    "distrobox:" Verwendet das auf Ihrem System konfigurierte Standard-Container-Backend (kann Podman, Docker usw. sein).
+    "podman distrobox:" Verwendet explizit Podman als Container-Backend.
+    Daemonlos vs. Daemonbasiert:
+
+    Podman arbeitet in einem daemonlosen Modus,
+    das Bedeutet es benötigt keinen lang laufenden Dienst zur Verwaltung von Containern,
+    was bestimmte Arbeitsabläufe vereinfachen und die Sicherheit verbessern kann.
+
+### Container Management Backends
+
+#### Podman --Daemonlos--
+
+    Podman ist so konzipiert, dass es ohne Daemon auskommt, d. h. es benötigt keinen langlaufenden Hintergrunddienst zur Verwaltung von Containern. Jeder Podman-Befehl wird als separater Prozess ausgeführt, was die Sicherheit verbessern und die Arbeitsabläufe vereinfachen kann. Dies ist eine der Hauptfunktionen von Podman, die es Benutzern ermöglicht, Container ohne einen zentralen Daemon auszuführen.
+
+#### Docker --Deamon-basiert:
+
+    Docker hingegen verwendet eine Client-Server-Architektur, bei der der Docker-Client mit dem Docker-Daemon (dockerd) kommuniziert. Der Daemon ist für die Verwaltung von Containern, Images, Netzwerken und Volumes zuständig. Das bedeutet, dass der Docker-Daemon ausgeführt werden muss, damit Sie Docker-Befehle verwenden können.
