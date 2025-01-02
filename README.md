@@ -147,13 +147,22 @@ Wir machen die DAtei ausführbar:
 <summary>🐢 Open Excample of Stop Containers</summary>
 
 ```ps
-    ~  ./stop_distrobox_containers.sh                                   ✔
+    ~  ./stop_distrobox_containers.sh
 Stopping all running Distrobox containers...
 Do you really want to stop container_ubuntu container_rocky_9 ? [Y/n]: y
-WARN[0000] failed to kill all processes, possibly due to lack of cgroup (Hint: enable cgroup v2 delegation)  error="cgroup not exist"
+
+WARN[0000] failed to kill all processes,
+possibly due to lack of cgroup (Hint: enable cgroup v2 delegation)
+error="cgroup not exist"
+
 container_ubuntu
-WARN[0000] failed to kill all processes, possibly due to lack of cgroup (Hint: enable cgroup v2 delegation)  error="cgroup not exist"
+
+WARN[0000] failed to kill all processes,
+possibly due to lack of cgroup (Hint: enable cgroup v2 delegation)
+error="cgroup not exist"
+
 container_rocky_9
+
 All running Distrobox containers have been stopped.
 
 ```
@@ -170,27 +179,6 @@ All running Distrobox containers have been stopped.
 ```
 
 </details>
-
-## Schritt 2: Erstellen Sie ein Shell-Skript
-
-1. **Erstellen Sie das Shell-Skript**:
-   Verwenden Sie einen Texteditor, um eine neue Shell-Skriptdatei zu erstellen. Sie können zum Beispiel `nano` verwenden:
-
-   ``bash
-   nano stop_distrobox.sh
-
-## Step 1: Open WSL
-
-1. Launch your WSL terminal. You can do this by searching for "WSL" or "Ubuntu" in the Windows Start menu.
-
-## Step 2: Create a Shell Script
-
-1. **Create the Shell Script**:
-   Use a text editor to create a new shell script file. For example, you can use `nano`:
-
-   ```bash
-   nano stop_distrobox.sh
-   ```
 
 ### GitHub Container Registry (GHCR)
 
