@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Container</title>
+</head>
+
+<body>
+
 # Container
 
 ![ship](./screen/ships.webp)
@@ -13,7 +24,7 @@
 ### Wir starten den Container
 
 ```ps
-    distrobox enter container_ubuntu
+    distrobox enter container_rocky_9
 ```
 
 ### Wir lassen uns die Container mit Details auflisten
@@ -43,7 +54,7 @@
 ```
 
 <details open>
-<summary>🐢open Excample ⌨️</summary>
+<summary>🐢 Open podman Excample ⌨️</summary>
 
 ```ps
    ~  sudo pacman -S podman distrobox  opencl-nvidia                                         1 ✘
@@ -102,6 +113,9 @@ Größendifferenz der Aktualisierung: 0,00 MiB
 
     Podman ist so konzipiert, dass es ohne Daemon auskommt, d. h. es benötigt keinen langlaufenden Hintergrunddienst zur Verwaltung von Containern. Jeder Podman-Befehl wird als separater Prozess ausgeführt, was die Sicherheit verbessern und die Arbeitsabläufe vereinfachen kann. Dies ist eine der Hauptfunktionen von Podman, die es Benutzern ermöglicht, Container ohne einen zentralen Daemon auszuführen.
 
-#### Docker --Deamon-basiert:
+#### Docker --Deamon-basiert--
 
     Docker hingegen verwendet eine Client-Server-Architektur, bei der der Docker-Client mit dem Docker-Daemon (dockerd) kommuniziert. Der Daemon ist für die Verwaltung von Containern, Images, Netzwerken und Volumes zuständig. Das bedeutet, dass der Docker-Daemon ausgeführt werden muss, damit Sie Docker-Befehle verwenden können.
+
+</body>
+</html>
