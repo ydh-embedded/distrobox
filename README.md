@@ -168,11 +168,11 @@ All running Distrobox containers have been stopped.
 ```
 
 ```ps
-       ~  distrobox list                                                                           ✔
+       ~  distrobox list
     ID           | NAME                 | STATUS             | IMAGE
     5bd9a731e2f3 | container_ubuntu     | Up 3 hours         | docker.io/library/ubuntu:latest
     0c4f5c0f7357 | container_rocky_9    | Up 3 hours         | docker.io/library/rockylinux:9
-       ~  distrobox list                                                                           ✔
+       ~  distrobox list
     ID           | NAME                 | STATUS             | IMAGE
     5bd9a731e2f3 | container_ubuntu     | Exited (143) 7 seconds ago | docker.io/library/ubuntu:latest
     0c4f5c0f7357 | container_rocky_9    | Exited (143) 6 seconds ago | docker.io/library/rockylinux:9
