@@ -128,3 +128,33 @@ th {
     color: white;
     /* White text color for headers */
 }
+
+/* style.css */
+
+/* General styles for code blocks */
+pre {
+    background-color: #1a2631;
+    /* Dark background for code blocks */
+    color: #053c49;
+    /* Light text color for code */
+    padding: 10px;
+    /* Padding inside code blocks */
+    border-radius: 5px;
+    /* Rounded corners */
+    overflow-x: auto;
+    /* Horizontal scroll for long lines */
+}
+
+/* Style for command prompts */
+.command-prompt {
+    color: #00ffcc;
+    /* Color for the command prompt */
+    font-weight: bold;
+    /* Bold text for emphasis */
+}
+
+/* Style for the command itself */
+.command {
+    color: #0fbde9;
+    /* Light color for the command */
+}

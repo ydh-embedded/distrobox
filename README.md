@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> 
-    <title>Container</title>
+        <title>Container</title>
 </head>
 
 <body>
@@ -70,18 +70,18 @@ Gesamtgröße der installierten Pakete: 103,01 MiB
 Größendifferenz der Aktualisierung: 0,00 MiB
 
 :: Installation fortsetzen? [J/n] j
-(3/3) Schlüssel im Schlüsselbund werden geprüft [##################################] 100%
-(3/3) Paket-Integrität wird überprüft [##################################] 100%
-(3/3) Paket-Dateien werden geladen [##################################] 100%
-(3/3) Auf Dateikonflikte wird geprüft [##################################] 100%
-(3/3) Verfügbarer Festplattenspeicher wird ermittelt [##################################] 100%
+(3/3) Schlüssel im Schlüsselbund werden geprüft         [##################################] 100%
+(3/3) Paket-Integrität wird überprüft                   [##################################] 100%
+(3/3) Paket-Dateien werden geladen                      [##################################] 100%
+(3/3) Auf Dateikonflikte wird geprüft                   [##################################] 100%
+(3/3) Verfügbarer Festplattenspeicher wird ermittelt    [##################################] 100%
 :: Pre-transaction-Hooks werden gestartet …
 (1/1) Creating Timeshift snapshot before upgrade...
 ==> skipping timeshift-autosnap due skipRsyncAutosnap in /etc/timeshift-autosnap.conf set to TRUE.
 :: Paketänderungen werden verarbeitet …
-(1/3) Reinstalliert wird podman [##################################] 100%
-(2/3) Reinstalliert wird distrobox [##################################] 100%
-(3/3) Reinstalliert wird opencl-nvidia [##################################] 100%
+(1/3) Reinstalliert wird podman                         [##################################] 100%
+(2/3) Reinstalliert wird distrobox                      [##################################] 100%
+(3/3) Reinstalliert wird opencl-nvidia                  [##################################] 100%
 :: Post-transaction-Hooks werden gestartet …
 (1/5) Reloading system manager configuration...
 (2/5) Reloading user manager configuration...
@@ -116,6 +116,10 @@ Größendifferenz der Aktualisierung: 0,00 MiB
 #### Docker --Deamon-basiert--
 
     Docker hingegen verwendet eine Client-Server-Architektur, bei der der Docker-Client mit dem Docker-Daemon (dockerd) kommuniziert. Der Daemon ist für die Verwaltung von Containern, Images, Netzwerken und Volumes zuständig. Das bedeutet, dass der Docker-Daemon ausgeführt werden muss, damit Sie Docker-Befehle verwenden können.
+
+### GitHub Container Registry (GHCR)
+
+[GHCR](https://github.blog/news-insights/product-news/introducing-github-container-registry/)
 
 </body>
 </html>
